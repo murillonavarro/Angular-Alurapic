@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -7,21 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  photos = [
-    {
-      url:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg',
-      description:'Leão'
-    },
-    {
-      url:
-      'https://www.worten.pt/i/0366c1e3c3f46a030081fde46d73d6ffff310aef.jpg',
-      description:'Leoa'
-    },
-    {
-      url:
-      'https://www.worten.pt/i/0366c1e3c3f46a030081fde46d73d6ffff310aef.jpg',
-      description:'Leoa'
-    }
-  ]
+  photos = [];
+  
+  constructor(http: HttpClient) {
+
+  }
+
 }
