@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { PhotosModule } from './photos/photos.module';
 import { AppRoutingModule } from './app-routing-module';
 import { ErrorsModule } from './errors/errors.module';
-import { PhotosComponent } from './photo-list/photos/photos.component';
+import { PhotosComponent } from './photos/photo-list/photos/photos.component';
 
 @NgModule({
   declarations: [
